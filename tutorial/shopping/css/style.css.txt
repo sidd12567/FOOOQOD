@@ -1,0 +1,366 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+
+/**  Basic Page CSS **/
+Body{
+  Font-family: “Roboto Slab”, sans-serif;
+  Font-weight: 300;
+  Font-size: 2em;
+  Position: relative;
+}
+
+H1, h2, h3, h4, h5, h6 {
+  Font-family: “Open Sans”, sans-serif;
+  Font-weight: 100;
+  Margin: 0;
+}
+
+/**  Header Navigation **/
+
+Header .navbar {
+  Padding: 30px 0;
+  Transition: all .5s ease-out;
+}
+
+Header .navbar-default {
+  Background-color: transparent;
+  Border: none;
+}
+
+Header .navbar-default .navbar-nav a {
+  Color: white;
+  Padding: 5px 8px;
+}
+
+Header .navbar-default .navbar-nav a:hover {
+  Color: #EEC856;
+}
+
+Header .navbar-default .navbar-nav .active a {
+  Font-weight: 700;
+  Color: #EEC856;
+  Background: transparent;
+  Border-bottom: 4px solid #EEC856;
+  Text-shadow: none;
+}
+
+Header .navbar-default .navbar-nav .active a:hover {
+  Color: #E15D5F;
+  Background: transparent;
+  Text-shadow: none;
+}
+
+/**  Navbar Brand **/
+
+Header .navbar-brand {
+  Background: url(../images/wisdompetlogo.svg);
+  Background-repeat: no-repeat;
+  Background-position: 15px 0;
+  Height: auto;
+}
+
+Header .navbar-brand h1 {
+  Color: white;
+  Margin: 0;
+  Font-size: 1.8em;
+  Font-weight: 400;
+  Padding-left: 105px;
+}
+
+Header .navbar-brand span.subhead {
+  Display: block;
+  Font-family: “Roboto Slab”, serif;
+  Font-size: .6em;
+  Font-weight: 100;
+}
+
+/**  Navbar Toggle **/
+Header .navbar-toggle {
+  Background-color: #279182;
+}
+
+Header .navbar-default .navbar-toggle .icon-bar {
+  Background-color: white;
+}
+
+@media only screen
+And (max-width: 768px) {
+  Header .navbar-collapse.in {
+    Background-color: rgba(0,0,0, .5);
+  }
+}
+
+/**  nav inbody **/
+
+Header .inbody {
+  Background: rgba(104,73,49,.9);
+}
+
+Header .navbar.inbody {
+  Padding-top: 0;
+  Padding-bottom: 0;
+}
+
+Header .navbar.inbody .navbar-nav {
+  Padding-top: 10px;
+}
+
+Header .inbody .navbar-brand {
+  Background-size: 43px;
+  Background-position: top left;
+  Margin-top: 5px;
+  Padding-bottom: 0;
+  Margin-left: 10px;
+}
+
+Header .inbody .navbar-brand h1 {
+  Font-size: 1.1em;
+  Padding-left: 38px;
+}
+
+Header .inbody .navbar-brand span.subhead {
+  Display: none;
+}
+
+/**  Carousel Fade **/
+
+.carousel.fade {
+  Opacity: 1;
+}
+
+.carousel.fade .item {
+  Transition: opacity ease-out .7s;
+  Left: 0;
+  Opacity: 0;
+  Top: 0;
+  Position: absolute;
+  Width: 100%;
+  Display: block;
+}
+
+.carousel.fade .item:first-child {
+  Top: auto;
+  Opacity: 0;
+  Position: relative;
+}
+
+.carousel.fade .item.active {
+  Opacity: 1;
+}
+
+.carousel-control {
+  Opacity: 0;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  Background-image: none;
+}
+
+#featured .item {
+  Background-size: cover;
+  Background-repeat: no-repeat;
+  Background-position: center center;
+  Width: 100%;
+  Height: 100%;
+}
+
+
+/**  Page **/
+.page {
+  Padding: 50px 0;
+}
+
+.page h2 {
+  Text-align: center;
+  Margin-bottom: 30px;
+}
+
+/**  Page – Mission **/
+#mission {
+  Background-color: #E4D29D;
+  Background-image: linear-gradient(to bottom, #EEF08A, #819A2D);
+  Border-top: 20px solid rgba(238, 200, 86, .5);
+}
+
+/**  Page – Services **/
+
+.service {
+  Margin: 20px 0;
+  Text-align: center;
+}
+
+#services img.icon {
+  Display: block;
+  Width: 80px;
+  Margin: 0 auto;
+  Margin-bottom: 5px;
+}
+
+#services h3 {
+  Margin-bottom: 10px;
+}
+
+@media only screen 
+And (min-width: 450px)
+And (max-width: 768px) {
+  .service p {
+    Padding: 0 20%;
+  }
+}
+
+/**  Page – Staff **/
+
+#staff {
+  Background-color: #E4D29D;
+  Background-image: linear-gradient(to bottom, #E4D29D, #CDAE50);
+}
+
+.doctor {
+  Margin: 10px 0;
+}
+
+.doctor h3 {
+  Font-weight: 600;
+  Font-size: 1.2em;
+  Color: #6F4E36;
+  Padding-bottom: 5px;
+}
+
+.doctor p {
+  Font-size: .8em;
+}
+
+.doctor img {
+  Width: 100%;
+}
+
+/**  Page – Testimonials **/
+
+#testimonials {
+  Padding: 0;
+}
+
+#testimonials h2 {
+  Display: none;
+}
+
+#testimonials blockquote {
+  Margin: 0;
+  Padding: 0;
+  Border-left: none;
+  Min-height: 500px;
+  Position: relative;
+}
+
+#testimonials blockquote .quote {
+  Background-color: rgba(255,255,255,.6);
+  Padding: 20px 5%;
+  Position: absolute;
+  Bottom: 0;
+  Width: 75%;
+  Font-weight: 400;
+  Border-radius: 0 50px 0 0;
+}
+
+#testimonials blockquote .quote:hover {
+  Background-color: rgba(239,240,196,.9);
+}
+
+#testimonials #janeh {
+  Background: url(../images/testimonial-janeh.jpg) no-repeat center center;
+  Background-size: cover;
+}
+
+#testimonials #johnb {
+  Background: url(../images/testimonial-johnb.jpg) no-repeat center center;
+  Background-size: cover;
+}
+
+#testimonials #mcphersons {
+  Background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
+  Background-size: cover;
+}
+
+#testimonials #lorraines {
+  Background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
+  Background-size: cover;
+}
+
+#testimonials .quote {
+  Font-size: 1.2em;
+  Line-height: 110%;
+  Font-weight: 400;
+}
+
+
+#testimonials .quote .more, #testimonials .customer {
+  Opacity: 0;
+  Font-size: 0;
+  Line-height: 0;
+  Padding-top: 10px;
+}
+
+
+#testimonials .quote:hover .more {
+  Font-family: “Open Sans”, sans-serif;
+  Font-weight: 100;
+  Display: block;
+  Opacity: 1;
+  Font-size: .8em;
+  Line-height: 120%;
+}
+
+#testimonials .quote:hover .customer {
+  Display: block;
+  Font-size: .7em;
+  Text-align: right;
+}
+
+#testimonials .quote .intro::after {
+  Content: ‘...’;
+}
+
+#testimonials .quote:hover .intro::after {
+  Content: ‘’;
+}
+
+/**  Footer **/
+
+Footer {
+  Background: #586D74;
+  Color: white;
+  Font-size: .8em;
+  Padding: 20px 0 40px 0;
+}
+
+Footer a {
+  Color: #E0E6AE;
+}
+
+Footer a:hover {
+  Color: #EEC856 !important;
+}
+
+Footer .phone {
+  Font-size: 1.4em;
+  Font-weight: 700;
+  Color: #E0E6AE;
+}
+
+Footer .navbar {
+  Margin-bottom: 0;
+  Min-height: 0;
+}
+
+Footer .navbar-default {
+  Background-color: transparent;
+  Border: none;
+  Margin-right: 40px;
+}
+
+Footer .navbar-nav>li a {
+  Padding-top: 0;
+  Padding-bottom: 0;
+  Text-decoration: underline;
+  Color: #EEC856 !important;
+}
